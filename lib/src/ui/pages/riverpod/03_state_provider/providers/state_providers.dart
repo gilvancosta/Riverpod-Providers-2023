@@ -9,6 +9,7 @@ class DarkMode extends _$DarkMode {
 
   void toggleDarkMode() {
     state = !state;
+    
   }
 }
 

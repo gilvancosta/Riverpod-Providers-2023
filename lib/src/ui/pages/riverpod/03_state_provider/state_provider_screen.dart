@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../core/helpers/random_generator.dart';
+import '../../theme_changer/providers/theme_changer_provider.dart';
 import 'providers/state_providers.dart';
 
 class StateProviderScreen extends ConsumerWidget {
@@ -11,7 +12,7 @@ class StateProviderScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     // final counter = ref.watch(counterProvider);
-    final isDarkMode = ref.watch(darkModeProvider);
+    final isDarkMode = ref.watch(themeNotifierProvider).isDarkmode;
     final userName = ref.watch(userNameProvider);
 
     print('StateProviderScreen build!!!');
@@ -33,7 +34,8 @@ class StateProviderScreen extends ConsumerWidget {
                     : Icons.light_mode_outlined,
                 size: 100),
             onPressed: () {
-              ref.read(darkModeProvider.notifier).toggleDarkMode();
+              // ref.read(darkModeProvider.notifier).toggleDarkMode();
+              ref.read(themeNotifierProvider.notifier).toggleDarkmode();
             },
           ),
           const SizedBox(height: 20),
@@ -42,9 +44,7 @@ class StateProviderScreen extends ConsumerWidget {
           TextButton.icon(
             icon: const Icon(Icons.add, size: 50),
             label: Consumer(builder: (context, refLocal, _) {
-
               final counter = refLocal.watch(counterProvider);
-
 
               return Text(counter.toString(),
                   style: const TextStyle(fontSize: 100));
