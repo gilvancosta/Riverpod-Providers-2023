@@ -3,15 +3,16 @@ import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../ui/pages/home/home_page.dart';
-import '../../ui/pages/riverpod/01_provider/provider_screen.dart';
-import '../../ui/pages/riverpod/02_provider_router/router_screen.dart';
-import '../../ui/pages/riverpod/03_state_provider/state_provider_screen.dart';
-import '../../ui/pages/riverpod/04_todo/todo_screen.dart';
-import '../../ui/pages/riverpod/05_future_provider/future_provider_screen.dart';
-import '../../ui/pages/riverpod/06_family_future_provider/future_provider_screen.dart';
-import '../../ui/pages/riverpod/07_stream_provider/stream_provider_screen.dart';
-import '../../ui/pages/riverpod/08_state_notifier/state_notifier_screen.dart';
-import '../../ui/pages/riverpod/09_change_notifier/change_notifier_screen.dart';
+import '../../ui/pages/riverpod/01_provider/hello_world/provider_screen.dart';
+import '../../ui/pages/riverpod/01_provider/provider_router/router_screen.dart';
+
+import '../../ui/pages/riverpod/02_notifier_provider/example01/notifier_provider_screen.dart';
+
+import '../../ui/pages/riverpod/02_notifier_provider/todo/todo_screen.dart';
+
+import '../../ui/pages/riverpod/03_future_provider/family_future_provider/future_provider_screen.dart';
+import '../../ui/pages/riverpod/03_future_provider/load_name/future_provider_screen.dart';
+import '../../ui/pages/riverpod/04_stream_provider/stream_name/stream_provider_screen.dart';
 
 part 'app_router.g.dart';
 
@@ -33,8 +34,8 @@ GoRouter appRouter(AppRouterRef ref) {
       builder: (context, state) => const RouterScreen(),
     ),
     GoRoute(
-      path: '/state-provider',
-      builder: (context, state) => const StateProviderScreen(),
+      path: '/notifier-provider',
+      builder: (context, state) => const NotifierProviderScreen(),
     ),
     GoRoute(
       path: '/todo',
@@ -51,14 +52,6 @@ GoRouter appRouter(AppRouterRef ref) {
     GoRoute(
       path: '/stream-provider',
       builder: (context, state) => const StreamProviderScreen(),
-    ),
-    GoRoute(
-      path: '/change-notifier-provider',
-      builder: (context, state) => const ChangeNotifierScreen(),
-    ),
-    GoRoute(
-      path: '/state-notifier-provider',
-      builder: (context, state) => const StateNotifierScreen(),
     ),
   ]);
 }

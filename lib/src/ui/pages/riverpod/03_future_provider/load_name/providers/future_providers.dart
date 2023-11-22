@@ -1,8 +1,7 @@
 // ignore_for_file: avoid_print
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import '../../../../../core/helpers/pokemon_information.dart';
-
+import '../../../../../../core/helpers/pokemon_information.dart';
 
 part 'future_providers.g.dart';
 

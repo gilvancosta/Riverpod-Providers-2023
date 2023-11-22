@@ -25,14 +25,14 @@ class ListViewWidget extends StatelessWidget {
           ),
 
           ListTileWidget(
-            title: 'State Provider',
+            title: 'Notifier Provider',
             subTitle: 'Un estado para almacenar un objeto',
-            location: '/state-provider',
+            location: '/notifier-provider',
             icon: Icons.refresh_rounded
           ),
 
           ListTileWidget(
-            title: 'State Provider + Provider',
+            title: 'Notifier Provider + Provider',
             subTitle: 'TODO - Una mezcla entre providers',
             location: '/todo',
             icon: Icons.info_outline
@@ -59,19 +59,7 @@ class ListViewWidget extends StatelessWidget {
             icon: Icons.accessible_rounded
           ),
 
-          ListTileWidget(
-            title: 'State Notifier Provider',
-            subTitle: 'Provider con notificación automática',
-            location: '/state-notifier-provider',
-            icon: Icons.list_alt_rounded
-          ),
-
-          ListTileWidget(
-            title: 'Change Notifier Provider',
-            subTitle: 'Provider con control de notificación a listeners',
-            location: '/change-notifier-provider',
-            icon: Icons.list_alt_rounded
-          ),
+ 
 
       ],
     );

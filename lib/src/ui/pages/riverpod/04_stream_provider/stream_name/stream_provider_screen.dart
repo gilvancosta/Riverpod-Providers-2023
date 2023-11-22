@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'providers/stream_provider.dart';
 
 
-
 class StreamProviderScreen extends StatelessWidget {
   const StreamProviderScreen({super.key});
 
@@ -18,7 +17,6 @@ class StreamProviderScreen extends StatelessWidget {
     );
   }
 }
-
 
 class StreamView extends ConsumerWidget {
   const StreamView({super.key});

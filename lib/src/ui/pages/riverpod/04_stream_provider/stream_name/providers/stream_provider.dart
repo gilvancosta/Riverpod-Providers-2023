@@ -1,6 +1,6 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import '../../../../../core/helpers/random_generator.dart';
+import '../../../../../../core/helpers/random_generator.dart';
 
 
 part 'stream_provider.g.dart';

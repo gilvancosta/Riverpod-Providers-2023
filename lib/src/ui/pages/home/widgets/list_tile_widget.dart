@@ -5,25 +5,24 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/router/app_router.dart';
 
 class ListTileWidget extends ConsumerWidget {
-
   final String title;
   final String subTitle;
   final String location;
   final IconData icon;
 
-  const ListTileWidget({super.key, 
+  const ListTileWidget({
+    super.key,
     required this.title,
     required this.subTitle,
     required this.location,
     required this.icon,
   });
 
-
   get appRouter => null;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final appRouter = ref.watch(appRouterProvider);    
+    final appRouter = ref.watch(appRouterProvider);
     final colors = Theme.of(context).colorScheme;
 
     return ListTile(

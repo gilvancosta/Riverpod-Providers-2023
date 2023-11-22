@@ -2,12 +2,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../../core/helpers/random_generator.dart';
-import '../../theme_changer/providers/theme_changer_provider.dart';
+import '../../../../../core/helpers/random_generator.dart';
+import '../../../theme_changer/providers/theme_changer_provider.dart';
+
 import 'providers/state_providers.dart';
 
-class StateProviderScreen extends ConsumerWidget {
-  const StateProviderScreen({super.key});
+class NotifierProviderScreen extends ConsumerWidget {
+  const NotifierProviderScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
