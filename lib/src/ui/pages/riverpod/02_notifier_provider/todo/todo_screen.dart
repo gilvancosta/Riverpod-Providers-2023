@@ -3,9 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../../core/helpers/random_generator.dart';
 import 'providers/todos_providers.dart';
 
-
-
-
 class TodoScreen extends ConsumerWidget {
   const TodoScreen({super.key});
 

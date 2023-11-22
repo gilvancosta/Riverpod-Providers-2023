@@ -49,14 +49,4 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Mantener el estado de un Stream y sus emosiones',
       location: '/stream-provider',
       icon: Icons.accessible_rounded),
-  MenuItem(
-      title: 'State Notifier Provider',
-      subTitle: 'Provider con notificación automática',
-      location: '/state-notifier-provider',
-      icon: Icons.list_alt_rounded),
-  MenuItem(
-      title: 'Change Notifier Provider',
-      subTitle: 'Provider con control de notificación a listeners',
-      location: '/change-notifier-provider',
-      icon: Icons.list_alt_rounded),
 ];
