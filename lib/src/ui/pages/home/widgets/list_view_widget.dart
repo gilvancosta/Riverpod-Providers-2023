@@ -19,7 +19,7 @@ class ListViewWidget extends StatelessWidget {
             subTitle: 'Un uso aplicado',
             location: '/provider-router',
             icon: Icons.credit_card),
-        const Padding(
+        Padding(
           padding: EdgeInsets.fromLTRB(20, 1, 1, 5),
           child: Divider(),
         ),
@@ -33,7 +33,7 @@ class ListViewWidget extends StatelessWidget {
             subTitle: 'TODO - Una mezcla entre providers',
             location: '/todo',
             icon: Icons.info_outline),
-        const Padding(
+        Padding(
           padding: EdgeInsets.fromLTRB(20, 1, 1, 5),
           child: Divider(),
         ),
@@ -47,7 +47,7 @@ class ListViewWidget extends StatelessWidget {
             subTitle: 'Providers con argumentos',
             location: '/future-family-provider',
             icon: Icons.car_rental_outlined),
-        const Padding(
+        Padding(
           padding: EdgeInsets.fromLTRB(20, 1, 1, 5),
           child: Divider(),
         ),
