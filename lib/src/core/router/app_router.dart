@@ -13,6 +13,7 @@ import '../../ui/pages/riverpod/02_notifier_provider/todo/todo_screen.dart';
 import '../../ui/pages/riverpod/03_future_provider/family_future_provider/future_provider_screen.dart';
 import '../../ui/pages/riverpod/03_future_provider/load_name/future_provider_screen.dart';
 import '../../ui/pages/riverpod/04_stream_provider/stream_name/stream_provider_screen.dart';
+import '../../ui/pages/riverpod_old/01_provide/example01/old_provider_page.dart';
 
 part 'app_router.g.dart';
 
@@ -53,5 +54,13 @@ GoRouter appRouter(AppRouterRef ref) {
       path: '/stream-provider',
       builder: (context, state) => const StreamProviderScreen(),
     ),
+// -- Old provider --
+    GoRoute(
+      path: '/old-provider',
+      builder: (context, state) => const OldProviderPage(),
+    ),
+
   ]);
 }
+
+

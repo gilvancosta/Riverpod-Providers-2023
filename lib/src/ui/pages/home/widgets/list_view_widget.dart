@@ -10,6 +10,11 @@ class ListViewWidget extends StatelessWidget {
     return ListView(
       children: const [
         ListTileWidget(
+            title: 'Old Provider',
+            subTitle: 'Fomras de usar un provider',
+            location: '/old-provider',
+            icon: Icons.accessible_rounded),
+        ListTileWidget(
             title: 'Provider Simple',
             subTitle: 'Un provider de sólo lectura',
             location: '/provider',
