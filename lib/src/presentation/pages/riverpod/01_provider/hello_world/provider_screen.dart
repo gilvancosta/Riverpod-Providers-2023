@@ -34,7 +34,7 @@ class ProviderScreen extends ConsumerWidget {
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                ref.refresh(helloWorldProvider);
+                ref.invalidate(helloWorldProvider);
               },
               child: const Text('Refresh'),
             ),
