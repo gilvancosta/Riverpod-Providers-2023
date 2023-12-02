@@ -6,7 +6,7 @@ part of 'future_providers.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$pokemonNameHash() => r'b43df7a74ad98b875fb0f1954288cd9ed38f2369';
+String _$pokemonNameHash() => r'a925935f710bf47ca70d31dd08225d4cd1a5ee84';
 
 /// See also [pokemonName].
 @ProviderFor(pokemonName)

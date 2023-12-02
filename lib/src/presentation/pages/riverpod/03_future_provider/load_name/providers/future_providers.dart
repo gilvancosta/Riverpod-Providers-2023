@@ -10,9 +10,9 @@ Future<String> pokemonName(PokemonNameRef ref) async {
   final pokemonId = ref.watch(pokemonIdProvider);
   final pokemonName = await PokemonInformation.getPokemonName(pokemonId);
 
-  ref.onDispose(() {
-    print('Estamos a punto de eliminar este provider');
-  });
+  // ref.onDispose(() {
+  //   print('Estamos a punto de eliminar este provider');
+//  });
 
   return pokemonName;
 }

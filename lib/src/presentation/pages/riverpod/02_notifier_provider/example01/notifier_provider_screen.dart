@@ -16,17 +16,16 @@ class NotifierProviderScreen extends ConsumerWidget {
     final isDarkMode = ref.watch(themeNotifierProvider).isDarkmode;
     final userName = ref.watch(userNameProvider);
 
-    print('StateProviderScreen build!!!');
+    print('NotifierProviderScreen build!!!');
     return Scaffold(
       appBar: AppBar(
         title: const Text('State Provider'),
       ),
       body: Center(
           child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Spacer(
-            flex: 1,
-          ),
+          //   const Spacer(flex: 1),
           IconButton(
             icon: Icon(
                 // icon: const Icon( Icons.light_mode_outlined, size: 100 ),
@@ -45,16 +44,15 @@ class NotifierProviderScreen extends ConsumerWidget {
           TextButton.icon(
             icon: const Icon(Icons.add, size: 50),
             label: Consumer(builder: (context, refLocal, _) {
-              final counter = refLocal.watch(counterProvider);
+              final counter = refLocal.watch(counterProvider).toString();
 
-              return Text(counter.toString(),
-                  style: const TextStyle(fontSize: 100));
+              return Text(counter, style: const TextStyle(fontSize: 100));
             }),
             onPressed: () {
               ref.read(counterProvider.notifier).increaseByOne();
             },
           ),
-          const Spacer(flex: 2),
+          // const Spacer(flex: 2),
         ],
       )),
       floatingActionButton: FloatingActionButton.extended(

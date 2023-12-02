@@ -1,11 +1,9 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-
 import 'package:uuid/uuid.dart';
 
 import '../../../../../../core/helpers/random_generator.dart';
 import '../../../../../../domain/entities/todo.dart';
-
 
 part 'todos_providers.g.dart';
 
@@ -78,4 +76,7 @@ List<Todo> filteredTodos(FilteredTodosRef ref) {
       return todos.where((todo) => !todo.done).toList();
   
   }
+
+
 }
+

@@ -15,6 +15,7 @@ class DarkMode extends _$DarkMode {
 
 @Riverpod(keepAlive: true)
 class Counter extends _$Counter {
+  
   @override
   int build() => 0;
 

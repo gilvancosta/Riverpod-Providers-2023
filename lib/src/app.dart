@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/router/app_router.dart';
 import 'core/theme/app_theme.dart';
-import 'ui/pages/theme_changer/providers/theme_changer_provider.dart';
+import 'presentation/pages/theme_changer/providers/theme_changer_provider.dart';
+
 
 class MyApp extends ConsumerWidget {
   const MyApp({super.key});
